@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import com.android.googlelensclone.barcode.BarcodeActivity
 import com.android.googlelensclone.facedetect.FaceDetectActivity
 import com.android.googlelensclone.imageLabeler.ImageLabelingActivity
+import com.android.googlelensclone.textrecog.TextRecognitionActivity
 import kotlinx.android.synthetic.main.activity_camera.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -41,6 +42,10 @@ class MainActivity : AppCompatActivity() {
 
         btnLabelerActivity.setOnClickListener {
             startActivity(Intent(this, ImageLabelingActivity::class.java))
+        }
+
+        btnTextRecogActivity.setOnClickListener {
+            startActivity(Intent(this, TextRecognitionActivity::class.java))
         }
     }
 
